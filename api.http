@@ -1,0 +1,25 @@
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "email": "user2@mail.ru",
+  "password": "123"
+}
+
+###
+GET http://localhost:8000/users
+
+
+###
+POST http://localhost:8000/salary
+Content-Type: application/json
+
+{
+  "user_id": 23,
+  "amount": 55000,
+  "update_date": "2025-02-01"
+}
+
+###
+GET http://localhost:8000/salary?user_id=2
